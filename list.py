@@ -1,4 +1,4 @@
-target = open('dados.dat', 'r')
-listar = target.read()
+dados = open('dados.dat', 'r')
+listar = dados.read()
 print(listar.replace("|"," "))
-target.close()
+dados.close()

@@ -1,12 +1,24 @@
-target = open('dados.dat', 'r')
-listar = []
-for linha in target.readlines():
-    ponteiro = [value for value in linha.split("|")]
-    listar.append(ponteiro)
-target.close()
-print(listar[19])
-listar.insert[7] = "S"
-print(listar[19])
-print(listar[7])
-for x in listar:
-    print (x)
+from sys import argv
+script, nrlinha = argv
+
+nrlinhaInt = int(nrlinha) - 1
+result = []
+
+dados = open('dados.dat', 'r')
+for linhas in dados:
+    linhas = linhas.split("|")
+    result.append(linhas)
+
+dados.close()
+
+print(result)
+#print (linhas [nrlinhaInt])
+result[nrlinhaInt] [6] = 'S\n'
+print("----------------------------\n")
+print(result)
+
+
+atualiza = open('dados.dat', 'w')
+resultStr = str(result)
+atualiza.write(resultStr)
+atualiza.close
