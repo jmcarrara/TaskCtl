@@ -13,7 +13,9 @@ contadorUpt.close
 
 target = open('dados.dat', 'a')
 
-linha = contadorStr + '|' + data + '|' + setor + '|' + tipo + '|' + usuario + '|' + descricao + '|' + finalizado.upper() + '\n'
+linha = (contadorStr + '|'
+         + data + '|' + setor + '|' + tipo + '|' + usuario
+         + '|' + descricao + '|' + finalizado.upper() + '\n')
 
 target.write(linha)
 target.close

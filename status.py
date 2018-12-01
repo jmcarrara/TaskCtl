@@ -12,8 +12,8 @@ for linhas in dados:
 dados.close()
 
 print(result)
-#print (linhas [nrlinhaInt])
-result[nrlinhaInt] [6] = 'S\n'
+# print (linhas [nrlinhaInt])
+result[nrlinhaInt][6] = 'S\n'
 print("----------------------------\n")
 print(result)
 
