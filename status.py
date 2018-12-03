@@ -13,12 +13,17 @@ dados.close()
 
 print(result)
 # print (linhas [nrlinhaInt])
-result[nrlinhaInt][6] = 'S\n'
+result[nrlinhaInt][6] = 'S'
 print("----------------------------\n")
 print(result)
 
+res = open('dados.dat', 'w')
+for linhas in result:
+    linhasStr = str(linhas)
+    res.write(linhasStr.replace("[", "").replace("]", "").replace(", ", "|").replace("'", "") + "\n")
 
-atualiza = open('dados.dat', 'w')
-resultStr = str(result)
-atualiza.write(resultStr)
-atualiza.close
+
+#atualiza = open('dados.dat', 'w')
+#resultStr = str(result)
+#atualiza.write(resultStr)
+#atualiza.close
